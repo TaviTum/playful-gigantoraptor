@@ -6,7 +6,8 @@ const dependenciesArray = [
   'react - for generating the views of the app',
   'react-dom - powers the rendering of elements to the DOM, typically paired with React',
   'webpack - for bundling all the javascript',
-  'jsx-loader - allows webpack to load jsx files'
+  'jsx-loader - allows webpack to load jsx files',
+  'react-router - handles routing!',
 ];
 
 const componentsMade = [
@@ -21,8 +22,9 @@ class HelloWorld extends React.Component {
       <div>
         <h1>Hello World!</h1>
       
-        <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! It uses 
-          only a few dependencies to get you started on working with React:</p>
+        <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
+          It uses only a few dependencies to get you started on working with 
+          React including routing:</p>
       
         <UnorderedList items={dependenciesArray} />
       
