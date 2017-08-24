@@ -22409,8 +22409,9 @@ class HelloWorld extends React.Component {
       React.createElement("div", null, 
         React.createElement("h1", null, "Hello World!"), 
       
-        React.createElement("p", null, "This is a starter ", React.createElement("a", {href: "http://glitch.com"}, "Glitch"), " app for React! It uses" + " " + 
-          "only a few dependencies to get you started on working with React:"), 
+        React.createElement("p", null, "This is a starter ", React.createElement("a", {href: "http://glitch.com"}, "Glitch"), " app for React!" + " " + 
+          "It uses only a few dependencies to get you started on working with" + " " + 
+          "React including routing:"), 
       
         React.createElement(UnorderedList, {items: dependenciesArray}), 
       
