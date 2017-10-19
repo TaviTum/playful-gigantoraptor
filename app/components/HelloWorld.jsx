@@ -1,4 +1,5 @@
 const React = require('react');
+var Route = require('react-router-dom').Route
 const UnorderedList = require('./UnorderedList');
 
 const dependenciesArray = [
@@ -7,7 +8,7 @@ const dependenciesArray = [
   'react-dom - powers the rendering of elements to the DOM, typically paired with React',
   'webpack - for bundling all the javascript',
   'jsx-loader - allows webpack to load jsx files',
-  'react-router - handles routing!',
+  'react-router-dom - handles routing!',
 ];
 
 const componentsMade = [
@@ -21,7 +22,7 @@ class HelloWorld extends React.Component {
     return (
       <div>
         <h1>Hello World!</h1>
-      
+              
         <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
           It uses only a few dependencies to get you started on working with 
           React including routing:</p>
