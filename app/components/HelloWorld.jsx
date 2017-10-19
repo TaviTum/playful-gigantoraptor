@@ -24,7 +24,7 @@ class HelloWorld extends React.Component {
       <div>
         <h1>Hello World!</h1>
         
-        <Link to='/about' />
+        <Link to='/about'>Learn about this app!</Link>
       
         <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
           It uses only a few dependencies to get you started on working with 

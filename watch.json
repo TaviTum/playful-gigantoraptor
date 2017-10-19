@@ -6,10 +6,6 @@
     ]
   },
   "restart": {
-    "exclude": [
-      "^public/",
-      "^dist/"
-    ],
     "include": [
       "\\.html$",
       "\\.jsx",
