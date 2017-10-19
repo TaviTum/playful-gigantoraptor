@@ -1,5 +1,5 @@
 const React = require('react');
-var Route = require('react-router-dom').Route
+const Link = require('react-router-dom').Link
 const UnorderedList = require('./UnorderedList');
 const About = require('./About');
 
@@ -24,7 +24,7 @@ class HelloWorld extends React.Component {
       <div>
         <h1>Hello World!</h1>
         
-        <Route path='/about' component={About} />
+        <Link to='/about' />
       
         <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
           It uses only a few dependencies to get you started on working with 
