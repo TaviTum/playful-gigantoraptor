@@ -10,7 +10,7 @@ class About extends React.Component {
         
         <p>This is a starter react app using react-router-dom to add routes!</p>
         
-        <Link to='/home'>Go home</Link>
+        <Link to='/'>Go home</Link>
       </div>
     );
   }

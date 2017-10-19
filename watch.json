@@ -1,16 +1,14 @@
 {
   "install": {
     "include": [
-      "^package\\.json$",
-      "^\\.env$"
+      "^package\\.json$"
     ]
   },
   "restart": {
     "include": [
       "\\.html$",
       "\\.jsx",
-      "\\.js$",
-      "\\.json$"
+      "\\.js$"
     ]
   },
   "throttle": 100
