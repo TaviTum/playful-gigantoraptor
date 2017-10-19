@@ -11700,7 +11700,7 @@ class About extends React.Component {
       React.createElement("div", null, 
         React.createElement("h1", null, "About"), 
         
-        React.createElement("p", null, "This is a starter react app using react-router-dom to add routes!"), 
+        React.createElement("p", null, "This is a starter react app using react-router-dom to add client-side routes!"), 
         
         React.createElement(Link, {to: "/"}, "Go home")
       )
