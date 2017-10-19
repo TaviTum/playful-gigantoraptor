@@ -1,6 +1,7 @@
 const React = require('react');
 var Route = require('react-router-dom').Route
 const UnorderedList = require('./UnorderedList');
+const About = require('./About');
 
 const dependenciesArray = [
   'express - middleware for the node server',
@@ -22,7 +23,9 @@ class HelloWorld extends React.Component {
     return (
       <div>
         <h1>Hello World!</h1>
-              
+        
+        <Route path='/about' component={About} />
+      
         <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
           It uses only a few dependencies to get you started on working with 
           React including routing:</p>
