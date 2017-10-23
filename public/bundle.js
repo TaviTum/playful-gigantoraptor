@@ -26956,6 +26956,7 @@ const dependenciesArray = [
 const componentsMade = [
   'HelloWorld - which is the view you are seeing now',
   'UnorderedList - which takes an array of "items" and returns a <ul> element with <li>, elements of each of those items within it',
+  'About - text content to show when "about" route is accessed',
 ];
 
 class HelloWorld extends React.Component {
@@ -26973,7 +26974,7 @@ class HelloWorld extends React.Component {
       
         React.createElement(UnorderedList, {items: dependenciesArray}), 
       
-        React.createElement("p", null, "Look in ", React.createElement("code", null, "app/components/"), " for two example components:"), 
+        React.createElement("p", null, "Look in ", React.createElement("code", null, "app/components/"), " for ", componentsMade.length, " example components:"), 
         
         React.createElement(UnorderedList, {items: componentsMade}), 
         
