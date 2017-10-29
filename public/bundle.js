@@ -11693,19 +11693,17 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 const React = __webpack_require__(7);
 const Link = __webpack_require__(28).Link
 
-class About extends React.Component {
+/* the main page for the about route of this app */
+const About = function() {
+  return (
+    React.createElement("div", null, 
+      React.createElement("h1", null, "About"), 
 
-  render() {
-    return (
-      React.createElement("div", null, 
-        React.createElement("h1", null, "About"), 
-        
-        React.createElement("p", null, "This is a starter react app using react-router-dom to add client-side routes!"), 
-        
-        React.createElement(Link, {to: "/"}, "Go home")
-      )
-    );
-  }
+      React.createElement("p", null, "This is a starter react app using react-router-dom to add client-side routes!"), 
+
+      React.createElement(Link, {to: "/"}, "Go home")
+    )
+  );
 }
 
 module.exports = About;
@@ -26959,30 +26957,28 @@ const componentsMade = [
   'About - text content to show when "about" route is accessed',
 ];
 
-class HelloWorld extends React.Component {
+/* the main page for the index route of this app */
+const HelloWorld = function(){
+  return (
+    React.createElement("div", null, 
+      React.createElement("h1", null, "Hello World!"), 
 
-  render() {
-    return (
-      React.createElement("div", null, 
-        React.createElement("h1", null, "Hello World!"), 
-        
-        React.createElement(Link, {to: "/about"}, "Learn about this app!"), 
-      
-        React.createElement("p", null, "This is a starter ", React.createElement("a", {href: "http://glitch.com"}, "Glitch"), " app for React!" + " " + 
-          "It uses only a few dependencies to get you started on working with" + " " + 
-          "React including routing:"), 
-      
-        React.createElement(UnorderedList, {items: dependenciesArray}), 
-      
-        React.createElement("p", null, "Look in ", React.createElement("code", null, "app/components/"), " for ", componentsMade.length, " example components:"), 
-        
-        React.createElement(UnorderedList, {items: componentsMade}), 
-        
-        React.createElement("p", null, "Note: You may not normally create a component for an unordered list," + " " + 
-          "but I did here just so I can show the power of code reuse by way of building components :)")
-      )
-    );
-  }
+      React.createElement(Link, {to: "/about"}, "Learn about this app!"), 
+
+      React.createElement("p", null, "This is a starter ", React.createElement("a", {href: "http://glitch.com"}, "Glitch"), " app for React!" + " " + 
+        "It uses only a few dependencies to get you started on working with" + " " + 
+        "React including routing:"), 
+
+      React.createElement(UnorderedList, {items: dependenciesArray}), 
+
+      React.createElement("p", null, "Look in ", React.createElement("code", null, "app/components/"), " for ", componentsMade.length, " example components:"), 
+
+      React.createElement(UnorderedList, {items: componentsMade}), 
+
+      React.createElement("p", null, "Note: You may not normally create a component for an unordered list," + " " + 
+        "but I did here just so I can show the power of code reuse by way of building components :)")
+    )
+  );
 }
 
 module.exports = HelloWorld;
@@ -26995,18 +26991,14 @@ const React = __webpack_require__(7);
 
 /* takes an array prop 'items' and returns a <ul> element 
    with each item as <li> elements */
-class UnorderedList extends React.Component {
-
-  render() {
-    const items = this.props.items;
-    return (
-      React.createElement("ul", null, 
-        items.map(function(item, i) {
-          return React.createElement("li", {key: i}, item);
-        })
-      )
-    );
-  }
+const UnorderedList = function({ items }){
+  return (
+    React.createElement("ul", null, 
+      items.map(function(item, i) {
+        return React.createElement("li", {key: i}, item);
+      })
+    )
+  );
 }
 
 module.exports = UnorderedList;

@@ -18,30 +18,28 @@ const componentsMade = [
   'About - text content to show when "about" route is accessed',
 ];
 
-class HelloWorld extends React.Component {
+/* the main page for the index route of this app */
+const HelloWorld = function(){
+  return (
+    <div>
+      <h1>Hello World!</h1>
 
-  render() {
-    return (
-      <div>
-        <h1>Hello World!</h1>
-        
-        <Link to='/about'>Learn about this app!</Link>
-      
-        <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
-          It uses only a few dependencies to get you started on working with 
-          React including routing:</p>
-      
-        <UnorderedList items={dependenciesArray} />
-      
-        <p>Look in <code>app/components/</code> for {componentsMade.length} example components:</p>
-        
-        <UnorderedList items={componentsMade} />
-        
-        <p>Note: You may not normally create a component for an unordered list, 
-          but I did here just so I can show the power of code reuse by way of building components :)</p>
-      </div>
-    );
-  }
+      <Link to='/about'>Learn about this app!</Link>
+
+      <p>This is a starter <a href="http://glitch.com">Glitch</a> app for React! 
+        It uses only a few dependencies to get you started on working with 
+        React including routing:</p>
+
+      <UnorderedList items={dependenciesArray} />
+
+      <p>Look in <code>app/components/</code> for {componentsMade.length} example components:</p>
+
+      <UnorderedList items={componentsMade} />
+
+      <p>Note: You may not normally create a component for an unordered list, 
+        but I did here just so I can show the power of code reuse by way of building components :)</p>
+    </div>
+  );
 }
 
 module.exports = HelloWorld;
