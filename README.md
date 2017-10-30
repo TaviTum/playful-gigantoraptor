@@ -1,7 +1,7 @@
 Starter React Router App on Glitch
 ==================================
 
-This app is a very small scaffold to get you started using React Router, and it's a remix of [starter-react](https://starter-react.glitch.me).
+This app is a very small scaffold to get you started using React Router for client-side routing, and it's a remix of [starter-react](https://starter-react.glitch.me).
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
