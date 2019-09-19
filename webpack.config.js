@@ -19,7 +19,7 @@ module.exports = {
         exclude: /node_modules/,
         include: path.join(__dirname, 'app'),
         query: {
-             presets: ['es2015']
+             presets:  ["@babel/preset-es2015", "@babel/preset-react"]
         }
       },
     ],

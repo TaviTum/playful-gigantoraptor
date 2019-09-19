@@ -1,9 +1,6 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-// const Route = require('react-router-dom').Route;
-// const BrowserRouter = require('react-router-dom').BrowserRouter;
-// const hashHistory = require('react-router-dom').hashHistory;
 import { hashHistory, Route, BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 /* Import Components */
 const HelloWorld = require('./components/HelloWorld');
