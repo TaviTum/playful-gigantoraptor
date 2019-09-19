@@ -9,9 +9,8 @@ const About = require('./components/About');
 ReactDOM.render((
   <BrowserRouter>
     <div>
-      <Route exact path="/" render={() => <Redirect to="/main"/>}></Route>
+      <Route exact path="/" render={() => (<Redirect to="/main"/>)}/>
       <Route path="/about" component={About}/>
       <Route path="/main" component={HelloWorld}/>
-
     </div>
   </BrowserRouter>), document.getElementById('main'));

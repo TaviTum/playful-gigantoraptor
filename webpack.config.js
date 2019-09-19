@@ -18,9 +18,6 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         include: path.join(__dirname, 'app'),
-        query: {
-             presets:  ["@babel/preset-es2015", "@babel/preset-react"]
-        }
       },
     ],
   },
