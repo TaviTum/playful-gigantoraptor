@@ -1,4 +1,4 @@
-import { hashHistory, Route, BrowserRouter } from 'react-router-dom';
+import { hashHistory, Route, BrowserRouter, Redirect } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -9,7 +9,9 @@ const About = require('./components/About');
 ReactDOM.render((
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={HelloWorld}/>
+      <Route exact path="/" render={() => <Redirect to="/main"/>}></Route>
       <Route path="/about" component={About}/>
+      <Route path="/main" component={HelloWorld}/>
+
     </div>
   </BrowserRouter>), document.getElementById('main'));
