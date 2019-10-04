@@ -8,12 +8,10 @@ const About = function() {
       <h1>About</h1>
 
       <p>This is a starter react app using react-router-dom to add client-side routes!</p>
-
-      <Link to='/main'>Go home</Link>
-      
-      <p> </p>
-      <Link to='/penguin'>Penguin!</Link>
-      
+      <div className="link-container">
+        <Link to='/main'>Go home</Link>
+        <Link to='/penguin'>Penguin!</Link>
+      </div>
     </div>
   );
 }
