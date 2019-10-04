@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   mode: 'production',
@@ -11,6 +13,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  plugins: [
+      new CopyWebpackPlugin([
+          { from: 'static', to:  path.join(__dirname, 'public')}
+      ])
+  ],
   module: {
     rules: [
       {
