@@ -9,7 +9,7 @@ const Penguin = function() {
 
       <p>This is a penguin!</p>
 
-      <Link to="/main">Go home</Link>
+      <Link style={{'margin'}} to="/main">Go home</Link>
       
       <p></p>
       <Link to="/about">About</Link>
