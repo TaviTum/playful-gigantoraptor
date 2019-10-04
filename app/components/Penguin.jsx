@@ -7,7 +7,7 @@ const Penguin = function() {
     <div>
       <h1>Qui-qui-qui!</h1>
 
-      <p>This is a penguin!</p>
+      <p style="color:red">This is a penguin!</p>
 
       <Link to="/main">Go home</Link>
       
