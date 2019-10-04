@@ -11,6 +11,7 @@
       "^dist/"
     ],
     "include": [
+      "\\.css$",
       "\\.js$",
       "\\.jsx$",
       "\\.json"
