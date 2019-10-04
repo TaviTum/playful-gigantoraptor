@@ -9,7 +9,7 @@ const About = function() {
 
       <p>This is a starter react app using react-router-dom to add client-side routes!</p>
 
-      <Link to='/'>Go home</Link>
+      <Link to='/main'>Go home</Link>
     </div>
   );
 }
