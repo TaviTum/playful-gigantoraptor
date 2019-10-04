@@ -1,5 +1,5 @@
-const React = require('react');
-const Link = require('react-router-dom').Link
+const React = require("react");
+const Link = require("react-router-dom").Link;
 
 /* the main page for the about route of this app */
 const Penguin = function() {
@@ -9,10 +9,12 @@ const Penguin = function() {
 
       <p>This is a penguin!</p>
 
-      <Link to='/main'>Go home</Link>
-      <Link to='/about'>About</Link>
+      <Link to="/main">Go home</Link>
+      
+      <p></p>
+      <Link to="/about">About</Link>
     </div>
   );
-}
+};
 
 module.exports = Penguin;

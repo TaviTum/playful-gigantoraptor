@@ -35,6 +35,8 @@ const HelloWorld = function(){
       <p>Look in <code>app/components/</code> for {componentsMade.length} example components:</p>
 
       <UnorderedList items={componentsMade} />
+      
+      <Link to='/penguin'>Penguin!</Link>
 
     </div>
   );
