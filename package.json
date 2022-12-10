@@ -16,7 +16,7 @@
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jsx-loader": "^0.13.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
